@@ -18,7 +18,8 @@ public class UppercaseFirstLetter {
      * @return The input string, but with the first letter now capitalized
      */
     public static String uppercaseFirstLetter(String input) {
-        input = input.substring(0,1).toUpperCase()+input.substring(1);
+        if(input.equals("")) return input;
+        else input = input.substring(0,1).toUpperCase()+input.substring(1);
         return input;
     }
 
